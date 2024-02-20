@@ -22,6 +22,7 @@ type HTTPServer struct {
 
 func MustLoad() *Config {
 	config := os.Getenv("CONFIG_PATH")
+
 	if config == "" {
 		log.Fatal("CONFIG_PATH is not set")
 	}
