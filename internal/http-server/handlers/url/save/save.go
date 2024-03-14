@@ -27,6 +27,7 @@ type Response struct {
 
 const aliasLength = 6
 
+//go:generate mockery --name=URLSaver
 type URLSaver interface {
 	SaveUrl(url string, alias string) (int64, error)
 }

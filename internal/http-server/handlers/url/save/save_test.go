@@ -60,7 +60,7 @@ func TestSaveHandler(t *testing.T) {
 		tc := tc
 
 		t.Run(tc.name, func(t *testing.T) {
-			t.Parallel()
+			t.Parallel() // marks each test case as capable of running in parallel
 
 			urlSaverMock := mocks.NewURLSaver(t)
 
